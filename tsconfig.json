@@ -3,13 +3,18 @@
     /* Language and Environment */
     "target": "es2016",
     "jsx": "react",
+    "outDir": "./dist",
+    "rootDir": "./src",
     /* Modules */
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     /* Type Checking */
     "strict": true,
   },
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist"],
+  "include": ["src/**/*"],
 }
