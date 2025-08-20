@@ -2,11 +2,12 @@
   "name": "pw-sdk-nodejs-server-internal",
   "version": "1.0.0",
   "description": "Sample BE with PW server-side SDK",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "scripts": {
     "env:config": "cp .env.sample .env",
     "test": "jest",
     "test:coverage": "jest --coverage",
+    "build": "tsc",
     "dev": "tsx watch src/index.ts",
     "start": "npx ts-node src/index.ts",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
